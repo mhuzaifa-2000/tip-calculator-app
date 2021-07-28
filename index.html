@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="center-heading">
+  <h1 class="heading">SPLI</h1>
+  <h1 class="heading">TTER</h1>
+</div>
+<form action="" id="frm">
+  <div class="center">
+    <div class="left-side">
+      <div class="bill-box"><h2 class="bill-heading">Bill</h2>
+        <div class="input-bill"><div class="inp-img"><img src="./images/icon-dollar.svg" alt="" srcset=""></div>
+        <input type="number" id="bill-amount" name="billAmount"  class="inp-area" value=0></div>
+      </div>
+      <div class="tip-percent"><h2 class="bill-heading">Select Tip %</h2>
+        <div class="grid">
+          <div class="grid-item">5%</div>
+          <div class="grid-item">10%</div>
+          <div class="grid-item">15%</div>
+          <div class="grid-item">25%</div>
+          <div class="grid-item">50%</div>
+          <div class="custom"><input class="custom-number" id="custom-tip" step=0 type="number" placeholder="Custom" name="customNumber"></div>
+        </div>
+      </div>
+      <div class="bill-box"><h2 class="bill-heading">Number of People</h2>
+        <div class="input-bill"><div class="inp-img"><img src="./images/icon-person.svg" alt="" srcset="">
+        </div><input type="number" id="num-of-people" class="inp-area" value=0></div>
+        <div class="cant-be-zero bill-heading" style="color: red; font-weight: 700;"></div>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="result-cards">
+        <div class="result-card">
+          <div class="result-card-left">
+            <div class="left-title"><h3 class="mg0">Tip Amount</h3></div>
+            <div class="left-subtitle">/ person</div>
+          </div>
+          <div class="result-card-right">
+               <h1 class="tip-amount">$0.00</h1>
+          </div>
+        </div>
+        <div class="result-card">
+          <div class="result-card-left">
+            <div class="left-title"><h3 class="mg0">Total</h3></div>
+            <div class="left-subtitle">/ person</div>
+          </div>
+          <div class="result-card-right">
+               <h1 class="total">$0.00</h1>
+          </div>
+        </div>
+      </div>
+        <div class="reset-button">Reset</div>
+    </div>
+  </div>
+</form>
+<script src="./index.js"></script>
+</body>
+</html>
